@@ -1,0 +1,184 @@
+/* General body setup */
+body {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  margin: 0;
+  background-image: url("images/name.jpeg");
+  background-position: center;
+  background-repeat: no-repeat; /* Fixed the typo here */
+  background-size: cover;
+}
+
+/* Row flex container */
+.Row {
+  height: calc(100% / 3);
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Ensure space between the items in the row */
+}
+
+/* Flexbox Bar Containers */
+.Bars {
+  height: 100%;
+  width: calc(100% / 3); /* Each bar takes up one-third of the row */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 30% width for twoBars */
+.twoBars {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 40% width for threeBars (middle section) */
+.threeBars {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image containers for correct sizing */
+.imagediv {
+  height: 75%;
+  width: 75%;
+}
+
+.twoImagediv {
+  height: 50%;
+  width: 60%;
+}
+
+.threeImagediv {
+  height: 50%;
+  width: 100%;
+}
+
+/* Centering content inside flex containers */
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Image styling */
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.flipped {
+  /* No styles, does nothing visually */
+}
+.img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: filter 0.5s ease, transform 0.3s ease;
+}
+.img:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+.img1 {
+  width: 75%;
+  height: 75%;
+}
+.img1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: filter 0.5s ease, transform 0.3s ease;
+}
+
+.img1:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+/* Timer style */
+.timer {
+  font-size: 50px; /* Timer font size */
+  color: white; /* White text color */
+  background-color: black; /* Black background */
+  padding: 30px; /* Padding around text */
+  border-radius: 15px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Access Granted Image */
+.access-granted {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the Access Granted image */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+.hidden {
+  display: none; /* Hides the element */
+}
+/* Styles for the image */
+.twoImagediv img {
+  cursor: pointer; /* Makes the image look clickable */
+}
+
+/* Styles for the message box (hidden by default) */
+.message-box {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position on the screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the box */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  z-index: 1000; /* Makes sure the box appears above other content */
+}
+
+/* The close "X" button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red; /* Makes the "X" turn red when hovering */
+}
+
+/* Message content styling */
+.message-content {
+  font-family: Arial, sans-serif;
+}
+/* Some extra background color classes (optional) */
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.lightgray {
+  background-color: lightgray;
+}
