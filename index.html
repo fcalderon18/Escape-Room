@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Memory Matching Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="Row">
+      <div class="Bars center-content">
+        <div class="imagediv center-content">
+          <img class="img1" id="orange1" src="buttons/lightgray.png" />
+        </div>
+      </div>
+      <div class="Bars center-content">
+        <div class="imagediv center-content">
+          <img class="img1" id="red1" src="buttons/lightgray.png" />
+        </div>
+      </div>
+      <div class="Bars center-content">
+        <div class="imagediv center-content">
+          <img class="img1" id="blue1" src="buttons/lightgray.png" />
+        </div>
+      </div>
+      <div class="Bars center-content">
+        <div class="imagediv center-content">
+          <img class="img1" id="green1" src="buttons/lightgray.png" />
+        </div>
+      </div>
+    </div>
+    <div class="Row">
+      <div class="twoBars">
+          <div class="twoImagediv center-content">
+              <div id="timer" class="timer">40</div> <!-- Timer Display -->
+          </div>
+      </div>
+  
+      <div class="twoBars">
+        <div id="access-granted" class="access-granted hidden">
+            <img src="images/AccessGranted.png" alt="Access Granted" />
+        </div>
+    </div>
+
+  
+    <div class="twoBars">
+      <div class="twoImagediv center-content">
+          <img class="img" src="images/r question mark.png" alt="Question Mark" />
+      </div>
+  </div>
+  
+  <!-- Hidden message box -->
+  <div id="messageBox" class="message-box">
+      <div class="message-content">
+          <span id="closeBtn" class="close-btn">X</span>
+          <p>You are trapped inside of a computer LABORATORY! Your only hope in escaping is to MATCH the buttons with their PAIRING colors before time runs out!</p>
+      </div>
+  </div>
+
+  </div>
+  </div>
+    <div class="Row">
+      <div class="Bars center-content">
+        <div class="imagediv center-content">
+          <img class="img1" id="blue2" src="buttons/lightgray.png" />
+        </div>
+      </div>
+      <div class="Bars center-content">
+        <div class="imagediv center-content">
+          <img class="img1" id="green2" src="buttons/lightgray.png" />
+        </div>
+      </div>
+      <div class="Bars center-content">
+        <div class="imagediv center-content">
+          <img class="img1" id="orange2" src="buttons/lightgray.png" />
+        </div>
+      </div>
+      <div class="Bars center-content">
+        <div class="imagediv center-content">
+          <img class="img1" id="red2" src="buttons/lightgray.png" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <audio src="Audio/background_music.wav" type="Audio/wav" id="Brick"></audio>
+    <audio src="Audio/buttob.wav" type="Audio/wav" id="bricker"></audio>
+    <audio src="Audio/accesSgranted.wav" type="Audio/wav" id="Ping"></audio>
+    <audio src="Audio/wrongBRRR.wav" type="Audio/wav" id="xPingy"></audio>
+    <audio src="Audio/winner.wav" type="Audio/wav" id="sxPingy"></audio>
+  </body>
+</html>
